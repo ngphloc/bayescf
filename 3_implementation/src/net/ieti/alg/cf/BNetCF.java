@@ -16,7 +16,7 @@ import net.hudup.core.data.RatingVector;
  * @version 1.0
  *
  */
-public class BNetCF extends ModelBasedCF {
+public class BnetCF extends ModelBasedCF {
 
 	
 	/**
@@ -55,7 +55,7 @@ public class BNetCF extends ModelBasedCF {
 	@Override
 	public Alg newInstance() {
 		// TODO Auto-generated method stub
-		return new BNetCF();
+		return new BnetCF();
 	}
 
 	
