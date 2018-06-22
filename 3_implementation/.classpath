@@ -5,5 +5,9 @@
 	<classpathentry kind="lib" path="lib/org.eclipse.recommenders.jayes-2.6.0-158.jar" sourcepath="lib/src/org.eclipse.recommenders.jayes-2.6.0-158-sources.jar"/>
 	<classpathentry kind="lib" path="lib/org.eclipse.recommenders.jayes.io-2.6.0-158.jar" sourcepath="lib/org.eclipse.recommenders.jayes.io-2.6.0-158.jar"/>
 	<classpathentry kind="lib" path="lib/hudup.jar" sourcepath="lib/src/hudup-src.zip"/>
+	<classpathentry kind="lib" path="lib/runtime-lib.jar"/>
+	<classpathentry kind="lib" path="lib/Elvira.jar" sourcepath="lib/src/Elvira-src.zip"/>
+	<classpathentry kind="lib" path="lib/javabayes.jar" sourcepath="lib/src/javabayes-src.zip"/>
+	<classpathentry kind="lib" path="lib/weka.jar" sourcepath="lib/src/weka-src.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
