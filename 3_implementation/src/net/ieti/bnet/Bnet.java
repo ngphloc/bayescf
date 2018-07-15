@@ -48,4 +48,12 @@ public interface Bnet {
 	void save(OutputStream out) throws IOException;
 	
 	
+	/**
+	 * Create a node in Bayesian network.
+	 * @param nodeName specified node name.
+	 * @return a node in Bayesian network.
+	 */
+	Bnode newNode(String nodeName);
+	
+	
 }

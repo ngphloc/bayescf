@@ -20,12 +20,4 @@ public interface Factory {
 	Bnet createNetwork();
 	
 	
-	/**
-	 * Create a node in Bayesian network.
-	 * @param nodeName specified node name.
-	 * @return a node in Bayesian network.
-	 */
-	Bnode createNode(String nodeName);
-	
-	
 }

@@ -28,13 +28,6 @@ public final class FactoryImpl implements Factory {
 	}
 
 	
-	@Override
-	public Bnode createNode(String nodeName) {
-		// TODO Auto-generated method stub
-		return new BNodeWrapper(nodeName);
-	}
-
-	
 	/**
 	 * This class is an implementation of a Bayesian network, which is the wrapper of {@link BayesNet}. 
 	 * @author Loc Nguyen
@@ -88,7 +81,12 @@ public final class FactoryImpl implements Factory {
 			writer.close();
 		}
 
-		
+		@Override
+		public Bnode newNode(String nodeName) {
+			// TODO Auto-generated method stub
+			return new BNodeWrapper(nodeName);
+		}
+
 	}
 	
 	
