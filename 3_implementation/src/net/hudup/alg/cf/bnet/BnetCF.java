@@ -59,7 +59,7 @@ public class BnetCF extends BnetAbstractCF {
 
 	
 	/**
-	 * 
+	 * Default constructor.
 	 */
 	public BnetCF() {
 		super();
