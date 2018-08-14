@@ -129,7 +129,7 @@ public final class FactoryImpl implements Factory {
 		@Override
 		public void setParents(Bnode... parentNodes) {
 			// TODO Auto-generated method stub
-			List<BayesNode> nodeList = new ArrayList<BayesNode>();
+			List<BayesNode> nodeList = new ArrayList<>();
 			for (Bnode node : parentNodes) {
 				nodeList.add(((BNodeWrapper)node).bayesNode);
 			}
@@ -156,7 +156,7 @@ public final class FactoryImpl implements Factory {
 		 * @return a list of {@link Bnode} (s).
 		 */
 		private static List<Bnode> toNodeList(List<BayesNode> bayesNodeList) {
-			List<Bnode> nodeList = new ArrayList<Bnode>();
+			List<Bnode> nodeList = new ArrayList<>();
 			for (BayesNode bayesNode : bayesNodeList) {
 				BNodeWrapper wrapper = new BNodeWrapper(bayesNode);
 				nodeList.add(wrapper);
