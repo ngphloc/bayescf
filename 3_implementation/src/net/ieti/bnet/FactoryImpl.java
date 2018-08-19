@@ -3,13 +3,14 @@ package net.ieti.bnet;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.eclipse.recommenders.jayes.BayesNet;
 import org.eclipse.recommenders.jayes.BayesNode;
 import org.eclipse.recommenders.jayes.io.xmlbif.XMLBIFReader;
 import org.eclipse.recommenders.jayes.io.xmlbif.XMLBIFWriter;
+
+import net.hudup.core.Util;
 
 /**
  * This class is the default implementation of a factory.
@@ -129,7 +130,7 @@ public final class FactoryImpl implements Factory {
 		@Override
 		public void setParents(Bnode... parentNodes) {
 			// TODO Auto-generated method stub
-			List<BayesNode> nodeList = new ArrayList<>();
+			List<BayesNode> nodeList = Util.newList();
 			for (Bnode node : parentNodes) {
 				nodeList.add(((BNodeWrapper)node).bayesNode);
 			}
@@ -156,7 +157,7 @@ public final class FactoryImpl implements Factory {
 		 * @return a list of {@link Bnode} (s).
 		 */
 		private static List<Bnode> toNodeList(List<BayesNode> bayesNodeList) {
-			List<Bnode> nodeList = new ArrayList<>();
+			List<Bnode> nodeList = Util.newList();
 			for (BayesNode bayesNode : bayesNodeList) {
 				BNodeWrapper wrapper = new BNodeWrapper(bayesNode);
 				nodeList.add(wrapper);
